@@ -1,5 +1,12 @@
 import React, { Component } from "react";
-import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem } from "reactstrap";
+import {
+  Collapse,
+  Nav,
+  Navbar,
+  NavbarBrand,
+  NavbarToggler,
+  NavItem,
+} from "reactstrap";
 import { Outlet, Link } from "react-router-dom";
 import Footer from "../components/FooterComponent";
 
@@ -20,24 +27,33 @@ class Layout extends Component {
 
   render() {
     return (
-        <>
-      <Navbar color="light" light sticky="top" expand="md">
-        <NavbarBrand href="/">DogDayz</NavbarBrand>
-        <NavbarToggler onClick={this.toggleNav} />
-        <Collapse isOpen={this.state.isNavOpen} navbar>
+      <header>
+        <Navbar color="light" light sticky="top" expand="md">
+          <NavbarBrand href="/">DogDayz</NavbarBrand>
+          <NavbarToggler onClick={this.toggleNav} />
+          <Collapse isOpen={this.state.isNavOpen} navbar>
             <Nav className="ml-auto" navbar>
-                <NavItem>
-                    <Link className="nav-link" to='/services'>Services</Link>
-                </NavItem>
-                <NavItem>
-                    <Link className="nav-link" to='/contactus'>Contact</Link>
-                </NavItem>
+              <NavItem>
+                <Link className="nav-link" to="/boarding">
+                  Boarding
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link className="nav-link" to="/training">
+                  Training
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link className="nav-link" to="/contactus">
+                  Contact
+                </Link>
+              </NavItem>
             </Nav>
-        </Collapse>
-      </Navbar>
-      <Outlet />
-      <Footer />
-      </>
+          </Collapse>
+        </Navbar>
+        <Outlet />
+        <Footer />
+      </header>
     );
   }
 }
