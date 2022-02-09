@@ -1,14 +1,26 @@
-import React, { Component } from 'react';
-import Main from './components/MainComponent.js'
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Layout from "./pages/Layout";
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Contact from "./pages/Contact";
+import NoPage from './pages/NoPage'
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Main />
-      </div>
-    )
+       <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout/>}>
+            <Route index element={<Home />} />
+            <Route path="services" element={<Services />} />
+            <Route path="contactus" element={<Contact />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+       </BrowserRouter>
+    );
   }
 }
 
