@@ -15,7 +15,7 @@ class WelcomeBlock extends Component {
           <Col className="pt-2">
             <h4>
               DogDayz Kennel and Obedience training serves the South Jersey area
-              with convienece and the best service possible.
+              with convenience and the best service possible.
             </h4>
             <p className="pt-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
