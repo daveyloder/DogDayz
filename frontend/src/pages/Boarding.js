@@ -13,7 +13,7 @@ const Boarding = () => {
       {/* Dog Pick-up and Drop-off */}
       <Row>
         <Col md={6}>
-          <img src="https://via.placeholder.com/500x350/" />
+          <img className="img-fluid" src="https://via.placeholder.com/500x350/" />
         </Col>
         <Col md={6}>
           <h5 className="pb-3">Pick-up and Drop-off</h5>
@@ -51,9 +51,9 @@ const Boarding = () => {
       </Row>
       <Row>
         <Col md={6}>
-          <img src="https://via.placeholder.com/500x350/" />
+          <img className="img-fluid" src="https://via.placeholder.com/500x350/" />
         </Col>
-        <Col>
+        <Col md={6}>
           <h5 className="pb-3">Boarding</h5>
           <p>
             Our kennel is designed for your best friend in mind. Each space is

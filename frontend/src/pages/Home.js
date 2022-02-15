@@ -19,14 +19,14 @@ const Home = () => {
           </div>
         </div>
         <div className="row pt-5">
-          <div className="col-4">
-            <img src="https://via.placeholder.com/300" alt="service photo 1" />
+          <div className="col-md-4">
+            <img className="img-fluid" src="https://via.placeholder.com/300" alt="service photo 1" />
           </div>
-          <div className="col-4">
-            <img src="https://via.placeholder.com/300" alt="service photo 2" />
+          <div className="col-md-4">
+            <img className="img-fluid" src="https://via.placeholder.com/300" alt="service photo 2" />
           </div>
-          <div className="col-4">
-            <img src="https://via.placeholder.com/300" alt="service photo 3" />
+          <div className="col-md-4">
+            <img className="img-fluid" src="https://via.placeholder.com/300" alt="service photo 3" />
           </div>
         </div>
       </div>
